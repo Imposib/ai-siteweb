@@ -1,0 +1,49 @@
+
+<!-- CSS for styling the login and sign up page -->
+<style>
+  #login-page, #signup-page {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label, input[type="submit"] {
+    margin-top: 10px;
+  }
+</style>
+
+<!-- JavaScript for handling the form submission -->
+<script>
+  // Get the login and sign up forms
+  const loginForm = document.querySelector('#login-page form');
+  const signupForm = document.querySelector('#signup-page form');
+
+  // Handle the login form submission
+  loginForm.addEventListener('submit', e => {
+    // Prevent the form from submitting
+    e.preventDefault();
+
+    // Get the username and password values
+    const username = loginForm.querySelector('#username').value;
+    const password = loginForm.querySelector('#password').value;
+
+    // Perform login with the username and password
+  });
+
+  // Handle the sign up form submission
+  signupForm.addEventListener('submit', e => {
+    // Prevent the form from submitting
+    e.preventDefault();
+
+    // Get the username, password, and email values
+    const username = signupForm.querySelector('#username').value;
+    const password = signupForm.querySelector('#password').value;
+    const email = signupForm.querySelector('#email').value;
+
+    // Perform sign up with the username, password, and email
+  });
+</script>
